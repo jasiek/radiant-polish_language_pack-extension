@@ -1,0 +1,190 @@
+---
+pl: 
+  account: 'Account'
+  activerecord:
+    errors:
+      messages:
+        blank: 'to nie może być puste' # required
+        invalid: 'to nie jest w poprawnym formacie' #invalid_format
+        not_a_number: 'to musi być liczba' # must be number
+        taken: 'ta nazwa jest już używana w inny miejscu' # name_in_use
+        too_long: 'to nie może być dłuższe niż {{count}} znaków' # character_limit
+        too_short: 'to musi mieć co najmniej {{count}} znaków' # character_minimum
+      models:
+        page:
+          attributes:
+            slug:
+              taken: 'ten slug jest już używany w innym miejscu' # slug_in_use
+        user:
+          attributes:
+            email:
+              invalid: 'to nie jest poprawny adres e-mail' # invalid_email
+            login:
+              taken: 'ten login jest już używany' # login already in use
+            password:
+              confirmation: 'te hasła muszą się zgadzać' # password_confirmation
+  add_child: 'Dodaj podstronę'
+  add_part: 'Dodaj cząstkę'
+  add_tab: 'Dodaj zakładkę'
+  admin: 'Administrator' 
+  available_tags: 'Dostępne tagi'
+  available_tags_for: 'Tagi dostępne dla {{name}}'
+  body: 'Zawartość'  
+  breadcrumb: 'Skrót'
+  buttons:
+    create: 'Stwórz {{name}}'   
+    save_and_continue: 'Zapisz i edytuj'
+    save_changes: 'Zapisz'  
+  cancel: 'Anuluj'
+  change: 'Zmień'
+  close: 'Zamknij'
+  content: 'Zawartość'
+  content_type: 'Rodzaj&#8209;Zawartości'    
+  creating_status: 'Tworzę {{model}}&#8230;'
+  date:
+    abbr_day_names: [N, Pn, Wt, Śr, Cz, Pt, So]
+    abbr_month_names: [~, Sty, Lut, Mar, Kwi, Maj, Cze, Lip, Sie, Wrz, Paź, Lis, Gru]
+    day_names: [Niedziela, Poniedziałek, Wtorek, Środa, Czwartek, Piątek, Sobot]
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %e, %Y"
+      only_day: "%e"
+      short: "%e %b"
+    month_names: [~, Styczeń, Luty, Marzec, Kwiecień, Maj, Czerwiec, Lipiec, Sierpień, Wrzesień, Październik, Listopad, Grudzień]
+    order: [ :year, :month, :day ]
+  delete_layout: 'Skasuj szablon'
+  delete_pages: 'Skasuj {{pages}}'  
+  delete_snippet: 'Skasuj snippet'
+  delete_user: 'Skasuj użytkownika'
+  description: 'Opis'
+  design: 'Projekt'
+  designer: 'Projektant'
+  draft: 'Podgląd na brudno'
+  edit_layout: 'Edytuj projekt'
+  edit_page:  'Edytuj stronę'   
+  edit_snippet: 'Edutuj Snippet'
+  edit_user: 'Edytuj użytkownika'
+  email_address: 'Adres e-mail'
+  extension: 'Rozszerzenie'
+  extensions: 'Rozszerzenia'
+  filter: 'Filtr'
+  hidden: 'Ukryty'
+  hide: 'Ukryj' 
+  keywords: 'Słowa kluczowe'
+  language: 'Język'
+  layout: 'Projekt'
+  layouts: 'Projekty'
+  log_out: 'Wyloguj'
+  logged_in_as: 'Zalogowany jako'
+  login: 'Zaloguj'
+  modify: 'Modyfikuj' 
+  more: 'Więcej'
+  name: 'Nazwa'
+  new_homepage: 'Nowa strona domowa'
+  new_layout: 'Nowy projekt'    
+  new_page: 'Nowa strona'
+  new_password: 'Nowe hasło'
+  new_snippet: 'Nowy snippet'
+  new_user: 'Nowy uzytkownik'  
+  no_layouts: 'Nie ma projektów'
+  no_pages: 'Nie ma stron'
+  no_snippets: 'Nie ma snippetów'
+  notes: 'Notatki'    
+  optional: 'Opcjonalne'
+  or: 'lub'
+  page: 'Strona'
+  page_page: 'Cżąstka strony;
+  page_title: 'Tytuł strony'  
+  page_type: 'Rodzaj strony'
+  pages: 'Stron'
+  pages_controller:
+    removed_many: "Strony zostały poprawnie usunięte."
+    removed_one: "Strona została poprawnie usunięta."
+    saved: "Twoja strona została zapisana poniżej."  
+  password: 'Hasło' 
+  password_confirmation: 'Potwierdzenie hasła'
+  personal: 'Osobiste'
+  personal_preferences: 'Preferencje osobiste'
+  please_login: 'Zaloguj się'
+  powered_by: 'Napędzany przez'
+  preferences: 'Preferencje' 
+  preferences_controller:
+    error_updating: 'Wystąpił błąd podczas zapisywania twoich preferencji.'
+    updated: 'Twoje preferencje zostały uaktualnione.' 
+  published: 'Opublikowane'
+  published_at: 'Opublikowano' 
+  published_on: 'Opublikowano'
+  reference:  'Referencja'
+  remember_me: 'Pamiętaj mnie'
+  remember_me_in_this_browser: 'Pamiętaj mnie w tej przeglądarce'
+  remove: 'Usuń'
+  remove_layout: 'Usuń projekt'
+  remove_page: 'Usuń stronę'
+  remove_pages: 'Usuń {{pages}}'
+  remove_snippet: 'Usuń snippet'
+  remove_tab: 'Usuń zakładkę'
+  remove_user: 'Usuń użytkownika'
+  required: 'Wymagane'  
+  resource_controller:
+    not_found: "{{humanized_model_name}} nie mógł zostać odnaleziony."
+    removed: "{{humanized_model_name}} został usunięty."
+    saved: "{{humanized_model_name}} został zapisany poniżej."
+    update_conflict: "{{humanized_model_name}} został zmodyfikowany od ostatniego odświeżenia. Nie da się zapisać zmian bez potencjalnej utraty danych."
+    validation_errors: "Podczas przetwarzania formularza wystąpiły błędy, proszę poprawić dane w formularzu i spróbować ponownie"
+  reviewed: 'Zatwierdzone'
+  roles: 'Role'
+  saving_changes: Zapisuję zmiany
+  saving_preferences: Zapisuję preferencje 
+  scheduled: "Zaharmonogramowany"
+  search_tags: 'Przeszukuj tagi:'
+  select:
+    default: '<domyślny>'
+    inherit: '<dziedzicz>'
+    none: '<żaden>' 
+    normal: '<normalny>'
+  settings: 'Ustawienia'
+  slug: 'Slug'
+  snippet: 'Snippet'   
+  snippets: 'Snippety'
+  status: 'Status'
+    # Warnings and info text:
+  testing: Testing
+  text:
+    layouts:
+      remove_warning: 'Czy jesteś pewień że chcesz <strong class="warning">permanentnie usunąć</strong> następujący projekt?'   
+    pages: 
+      remove_warning: 'Czy jesteś pewień że chcesz <strong class="warning">permanentnie usunąć</strong> następujące strony {{pages}}?'
+    snippets:
+      remove_warning: 'Czy jesteś pewień że chcesz <strong class="warning">permanentnie usunąć</strong> następujący snippet?'
+    users: 
+      remove_warning: 'Czy jesteś pewień że chcesz <strong class="warning">permanentnie usunąć</strong> następującego użytkownika?'
+  this_file_language: "Angielski" 
+  time:
+    am: 'am'
+    formats:
+      datetime:
+        formats:
+          default: "%Y-%m-%dT%H:%M:%S%Z"
+      default: "%a %b %d %H:%M:%S %Z %Y"   
+      long: "%B %d, %Y %H:%M"
+      only_second: "%S"
+      short: "%d %b %H:%M"
+      time: "%H:%M"
+      timestamp: "%I:%M %p on %B %d, %Y" 
+    pm: 'pm'
+  timestamp:
+    at: 'o'
+    by: 'przez'
+    last_updated: 'Ostatnio uaktualnione'
+  user: 'Użytkownik'
+  username: 'Nazwa użytkownika'
+  username_or_email: 'Użytkownik lub adres e-mail'
+  users: 'Użytkownicy'
+  users_controller:
+    cannot_delete_self: 'Nie możesz skasować samego siebie.'
+  version: 'Wersja'
+  view_site: 'Pokaż stronę internetową'
+  website: 'Strona internetowa'
+  welcome_controller:
+    invalid_user: 'Nieprawidłowy użytkownik, adres e-mail lub hasło.' 
+    logged_out: 'Jesteś wylogowany.'  
