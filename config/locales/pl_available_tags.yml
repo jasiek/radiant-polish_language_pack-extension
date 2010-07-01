@@ -7,7 +7,7 @@ pl:
     breadcrumbs: "Wyświetla ślad skrótów do bieżącej strony. Separator określa fragment HTML, który
       jest umieszczany pomiędzy skrótami, domyślnie jest to @>@. Atrubut boolowski nolinks kontroluje
       wyświetlanie skrótów jako tekst (nie zawierający linków), na przykład na potrzeby generowania
-      tagów."
+      tagów.
 
       *Użycie:*
 

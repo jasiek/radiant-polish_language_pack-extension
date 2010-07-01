@@ -93,7 +93,7 @@ pl:
   optional: 'Opcjonalne'
   or: 'lub'
   page: 'Strona'
-  page_page: 'Cżąstka strony;
+  page_page: 'Cząstka strony'
   page_title: 'Tytuł strony'  
   page_type: 'Rodzaj strony'
   pages: 'Stron'
