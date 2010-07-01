@@ -1,6 +1,6 @@
 ---
-pl: 
-  account: 'Account'
+pl:
+  account: 'Konto'
   activerecord:
     errors:
       messages:
@@ -96,7 +96,7 @@ pl:
   page_page: 'Cząstka strony'
   page_title: 'Tytuł strony'  
   page_type: 'Rodzaj strony'
-  pages: 'Stron'
+  pages: 'Strony'
   pages_controller:
     removed_many: "Strony zostały poprawnie usunięte."
     removed_one: "Strona została poprawnie usunięta."
@@ -133,8 +133,8 @@ pl:
     validation_errors: "Podczas przetwarzania formularza wystąpiły błędy, proszę poprawić dane w formularzu i spróbować ponownie"
   reviewed: 'Zatwierdzone'
   roles: 'Role'
-  saving_changes: Zapisuję zmiany
-  saving_preferences: Zapisuję preferencje 
+  saving_changes: 'Zapisuję zmiany'
+  saving_preferences: 'Zapisuję preferencje'
   scheduled: "Zaharmonogramowany"
   search_tags: 'Przeszukuj tagi:'
   select:
@@ -148,7 +148,6 @@ pl:
   snippets: 'Snippety'
   status: 'Status'
     # Warnings and info text:
-  testing: Testing
   text:
     layouts:
       remove_warning: 'Czy jesteś pewień że chcesz <strong class="warning">permanentnie usunąć</strong> następujący projekt?'   
@@ -158,7 +157,7 @@ pl:
       remove_warning: 'Czy jesteś pewień że chcesz <strong class="warning">permanentnie usunąć</strong> następujący snippet?'
     users: 
       remove_warning: 'Czy jesteś pewień że chcesz <strong class="warning">permanentnie usunąć</strong> następującego użytkownika?'
-  this_file_language: "Angielski" 
+  this_file_language: "Polski" 
   time:
     am: 'am'
     formats:
