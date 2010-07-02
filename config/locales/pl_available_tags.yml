@@ -2,30 +2,30 @@
 pl::
   desc: 
     author:
-      Renders the name of the author of the current page.
+      Wyświetla autora bieżącej strony.
   
     breadcrumb:
-        Renders the @breadcrumb@ attribute of the current page.
+      Wyświetla @skrót@ bieżącej strony.
       
     breadcrumbs:
-      Renders a trail of breadcrumbs to the current page. The separator attribute
-      specifies the HTML fragment that is inserted between each of the breadcrumbs. By
-      default it is set to @>@. The boolean nolinks attribute can be specified to render
-      breadcrumbs in plain text, without any links (useful when generating title tag).
+      Wyświetla ścieżkę skrótów do bieżącej strony. Separator określa fragment HTML
+      który zostanie wstawiony pomiędzy poszczególne skróty. Separator domyślnie jest
+      ustawiony na znak @>@. Aby wyświetlić skróty jako tekst (bez linków), ustaw atrybut
+      nolinks (na przykład, gdy chcesz wygenerować tytuł).
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;breadcrumbs [separator="separator_string"] [nolinks="true"] /></code></pre>
   
     children-count:
-      Renders the total number of children.
+      Wyświetla całkowitą ilość podtagów.
   
     children-each-child:
       Page attribute tags inside of this tag refer to the current child. This is occasionally
       useful if you are inside of another tag (like &lt;r&#58;find&gt;) and need to refer back to the
       current child.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;each>
         <r&#58;child>...</r&#58;child>
@@ -44,7 +44,7 @@ pl::
       present header changes. Simply specify the names of the other headers in a semicolon
       separated list.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;each>
         <r&#58;header [name="header_name"] [restart="name1[;name2;...]"]>
@@ -57,7 +57,7 @@ pl::
       Renders the tag contents only if the current page is the first child in the context of
       a children&#58;each tag
       
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;each>
         <r&#58;if_first >
@@ -71,7 +71,7 @@ pl::
       Renders the tag contents only if the current page is the last child in the context of
       a children&#58;each tag
       
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;each>
         <r&#58;if_last >
@@ -85,7 +85,7 @@ pl::
       Renders the tag contents unless the current page is the first child in the context of
       a children&#58;each tag
       
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;each>
         <r&#58;unless_first >
@@ -99,7 +99,7 @@ pl::
       Renders the tag contents unless the current page is the last child in the context of
       a children&#58;each tag
       
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;each>
         <r&#58;unless_last >
@@ -113,7 +113,7 @@ pl::
       Cycles through each of the children. Inside this tag all page attribute tags
       are mapped to the current child page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;each [offset="number"] [limit="number"]
        [by="published_at|updated_at|created_at|slug|title|keywords|description"]
@@ -126,7 +126,7 @@ pl::
       Returns the first child. Inside this tag all page attribute tags are mapped to
       the first child. Takes the same ordering options as @<r&#58;children&#58;each>@.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;first>...</r&#58;children&#58;first></code></pre>
   
@@ -134,21 +134,21 @@ pl::
       Returns the last child. Inside this tag all page attribute tags are mapped to
       the last child. Takes the same ordering options as @<r&#58;children&#58;each>@.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children&#58;last>...</r&#58;children&#58;last></code></pre>
   
     children:
       Gives access to a page's children.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;children>...</r&#58;children></code></pre>
   
     comment:
       Nothing inside a set of comment tags is rendered.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;comment>...</r&#58;comment></code></pre>
   
@@ -161,7 +161,7 @@ pl::
       part to be evaluated in the context of the child page. By default 'contextual'
       is set to true.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;content [part="part_name"] [inherit="true|false"] [contextual="true|false"] /></code></pre>
   
@@ -170,7 +170,7 @@ pl::
       attribute to reset the cycle to the beginning.  Use the @name@ attribute to track
       multiple cycles; the default is @cycle@.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;cycle values="first, second, third" [reset="true|false"] [name="cycle"] /></code></pre>
   
@@ -181,14 +181,14 @@ pl::
       options are @published_at@, @created_at@, @updated_at@, and @now@. @now@ will render the
       current date/time, regardless of the  page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;date [format="&#37;A, &#37;B &#37;d, &#37;Y"] [for="published_at"]/></code></pre>
   
     escape_html:
       Escapes angle brackets, etc. for rendering in an HTML document.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;escape_html>...</r&#58;escape_html></code></pre>
   
@@ -196,7 +196,7 @@ pl::
       Inside this tag all page related tags refer to the page found at the @url@ attribute.
       @url@s may be relative or absolute paths.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;find url="value_to_find">...</r&#58;find></code></pre>
   
@@ -205,7 +205,7 @@ pl::
 
       This is typically used inside another tag (like &lt;r&#58;children&#58;each&gt;) to add conditional mark-up if the child element is or descends from the current page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;if_ancestor_or_self>...</r&#58;if_ancestor_or_self></code></pre>
   
@@ -215,7 +215,7 @@ pl::
       to the given status, the default is @"published"@. @status="all"@ includes all
       non-virtual pages regardless of status.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;if_children [status="published"]>...</r&#58;if_children></code></pre>
   
@@ -229,14 +229,14 @@ pl::
       so that it will render the containing elements if any of the listed parts are found.
       By default the @find@ attribute is set to @all@.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;if_content [part="part_name, other_part"] [inherit="true"] [find="any"]>...</r&#58;if_content></code></pre>
   
     if_dev:
       Renders the containing elements only if Radiant in is development mode.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;if_dev>...</r&#58;if_dev></code></pre>
   
@@ -244,7 +244,7 @@ pl::
       Renders the contained elements only if the current contextual page has a parent, i.e.
       is not the root page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;if_parent>...</r&#58;if_parent></code></pre>
   
@@ -253,7 +253,7 @@ pl::
 
       This is typically used inside another tag (like &lt;r&#58;children&#58;each&gt;) to add conditional mark-up if the child element is the current page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;if_self>...</r&#58;if_self></code></pre>
   
@@ -262,7 +262,7 @@ pl::
       given in the @matches@ attribute. If the @ignore_case@ attribute is set to false, the
       match is case sensitive. By default, @ignore_case@ is set to true.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;if_url matches="regexp" [ignore_case="true|false"]>...</r&#58;if_url></code></pre>
   
@@ -275,7 +275,7 @@ pl::
       append a pound sign (<code>#</code>) followed by the value of the attribute to
       the @href@ attribute of the HTML @a@ tag--effectively making an HTML anchor.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;link [anchor="name"] [other attributes...] /></code></pre>
       
@@ -286,7 +286,7 @@ pl::
     markdown:
       Filters its contents with the Markdown filter.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;markdown>** bold text **</r&#58;markdown></code></pre>
 
@@ -298,7 +298,7 @@ pl::
       Emits the page description field in a meta tag, unless attribute
       'tag' is set to 'false'.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code> <r&#58;meta&#58;description [tag="false"] /> </code></pre>
   
@@ -306,7 +306,7 @@ pl::
       Emits the page keywords field in a meta tag, unless attribute
       'tag' is set to 'false'.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code> <r&#58;meta&#58;keywords [tag="false"] /> </code></pre>
   
@@ -314,7 +314,7 @@ pl::
       The namespace for 'meta' attributes.  If used as a singleton tag, both the description
       and keywords fields will be output as &lt;meta /&gt; tags unless the attribute 'tag' is set to 'false'.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code> <r&#58;meta [tag="false"] />
        <r&#58;meta>
@@ -327,7 +327,7 @@ pl::
       Renders the containing elements if the element is the first
       in the navigation list
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;normal><r&#58;if_first>...</r&#58;if_first></r&#58;normal></code></pre>
   
@@ -335,7 +335,7 @@ pl::
       Renders the containing elements if the element is the last
       in the navigation list
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;normal><r&#58;if_last>...</r&#58;if_last></r&#58;normal></code></pre>
   
@@ -355,7 +355,7 @@ pl::
 
       The @between@ tag specifies what should be inserted in between each of the links.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;navigation urls="[Title&#58; url | Title&#58; url | ...]">
         <r&#58;normal><a href="<r&#58;url />"><r&#58;title /></a></r&#58;normal>
@@ -368,21 +368,21 @@ pl::
     page:
       Causes the tags referring to a page's attributes to refer to the current page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;page>...</r&#58;page></code></pre>
   
     parent:
       Page attribute tags inside this tag refer to the parent of the current page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;parent>...</r&#58;parent></code></pre>
   
     random:
       Randomly renders one of the options specified by the @option@ tags.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;random>
         <r&#58;option>...</r&#58;option>
@@ -394,7 +394,7 @@ pl::
     rfc1123_date:
       Outputs the published date using the format mandated by RFC 1123. (Ideal for RSS feeds.)
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;rfc1123_date /></code></pre>
   
@@ -404,7 +404,7 @@ pl::
     smarty_pants:
       Filters its contents with the SmartyPants filter.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;smarty_pants>"A revolutionary quotation."</r&#58;smarty_pants></code></pre>
 
@@ -415,14 +415,14 @@ pl::
     snippet:
       Renders the snippet specified in the @name@ attribute within the context of a page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;snippet name="snippet_name" /></code></pre>
 
       When used as a double tag, the part in between both tags may be used within the
       snippet itself, being substituted in place of @<r&#58;yield/>@.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;snippet name="snippet_name">Lorem ipsum dolor...</r&#58;snippet></code></pre>
   
@@ -430,14 +430,14 @@ pl::
       Prints the page's status as a string.  Optional attribute 'downcase'
       will cause the status to be all lowercase.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;status [downcase='true'] /></code></pre>
   
     textile:
       Filters its contents with the Textile filter.
 
-      *Usage*&#58;
+      *Użycie*&#58;
 
       <pre><code><r&#58;textile>
       * First
@@ -459,7 +459,7 @@ pl::
 
       This is typically used inside another tag (like &lt;r&#58;children&#58;each&gt;) to add conditional mark-up unless the child element is or descends from the current page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;unless_ancestor_or_self>...</r&#58;unless_ancestor_or_self></code></pre>
   
@@ -469,7 +469,7 @@ pl::
       the default is @"published"@. @status="all"@ includes all non-virtual pages
       regardless of status.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;unless_children [status="published"]>...</r&#58;unless_children></code></pre>
   
@@ -482,14 +482,14 @@ pl::
       so that it will not render the containing elements if any of the listed parts are found.
       By default the @find@ attribute is set to @all@.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;unless_content [part="part_name, other_part"] [inherit="false"] [find="any"]>...</r&#58;unless_content></code></pre>
   
     unless_dev:
       The opposite of the @if_dev@ tag.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;unless_dev>...</r&#58;unless_dev></code></pre>
   
@@ -497,7 +497,7 @@ pl::
       Renders the contained elements only if the current contextual page has no parent, i.e.
       is the root page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;unless_parent>...</r&#58;unless_parent></code></pre>
   
@@ -506,14 +506,14 @@ pl::
 
       This is typically used inside another tag (like &lt;r&#58;children&#58;each&gt;) to add conditional mark-up unless the child element is the current page.
 
-      *Usage&#58;*
+      *Użycie&#58;*
 
       <pre><code><r&#58;unless_self>...</r&#58;unless_self></code></pre>
   
     unless_url:
       The opposite of the @if_url@ tag.
 
-      *Usage&#58;*
+      *Użycie&#58;*
       
       <pre><code><r&#58;unless_url matches="regexp" [ignore_case="true|false"]>...</r&#58;unless_url></code></pre>
   
@@ -524,7 +524,7 @@ pl::
       Used within a snippet as a placeholder for substitution of child content, when
       the snippet is called as a double tag.
 
-      *Usage (within a snippet)&#58;*
+      *Użycie (within a snippet)&#58;*
       
       <pre><code>
       <div id="outer">

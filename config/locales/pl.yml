@@ -182,7 +182,7 @@ pl:
   users_controller:
     cannot_delete_self: 'Nie możesz skasować samego siebie.'
   version: 'Wersja'
-  view_site: 'Pokaż stronę internetową'
+  view_site: 'Pokaż stronę'
   website: 'Strona internetowa'
   welcome_controller:
     invalid_user: 'Nieprawidłowy użytkownik, adres e-mail lub hasło.' 
